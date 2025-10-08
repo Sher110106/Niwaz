@@ -196,7 +196,7 @@ export default function CartModal() {
                     <div className="mb-3 flex items-center justify-between border-b border-[#ECECEC] pb-1">
                       <p>Taxes</p>
                       <Price
-                        className="text-right text-base text-black dark:text-white"
+                        className="text-right text-base text-[#212121]"
                         amount={cart.cost.totalTaxAmount.amount}
                         currencyCode={cart.cost.totalTaxAmount.currencyCode}
                       />
@@ -208,7 +208,7 @@ export default function CartModal() {
                     <div className="mb-3 flex items-center justify-between border-b border-[#ECECEC] pb-1 pt-1">
                       <p>Total</p>
                       <Price
-                        className="text-right text-base text-black dark:text-white"
+                        className="text-right text-base text-[#212121]"
                         amount={cart.cost.totalAmount.amount}
                         currencyCode={cart.cost.totalAmount.currencyCode}
                       />
@@ -229,10 +229,10 @@ export default function CartModal() {
 
 function CloseCart({ className }: { className?: string }) {
   return (
-    <div className="relative flex h-11 w-11 items-center justify-center rounded-md border border-neutral-200 text-black transition-colors dark:border-neutral-700 dark:text-white">
+    <div className="relative flex h-11 w-11 items-center justify-center rounded-lg border border-[#ECECEC] bg-white text-[#212121] shadow-sm transition-all duration-300 hover:border-[#BD7263] hover:shadow-md hover:scale-105">
       <XMarkIcon
         className={clsx(
-          'h-6 transition-all ease-in-out hover:scale-110',
+          'h-5 w-5 transition-all ease-in-out hover:scale-110',
           className
         )}
       />

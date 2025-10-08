@@ -8,7 +8,7 @@ import { ReactNode } from 'react';
 import { Toaster } from 'sonner';
 import './globals.css';
 
-const siteName = process.env.SITE_NAME || 'Resham & Thread';
+const siteName = process.env.SITE_NAME || 'NIWAZ';
 
 export const metadata = {
   metadataBase: new URL(baseUrl),
@@ -17,7 +17,7 @@ export const metadata = {
     template: `%s | ${siteName}`
   },
   description:
-    'Hand-embroidered ethnicwear celebrating traditional craftsmanship. Custom lehengas, suits, and dupattas made by skilled artisans.',
+    'NIWAZ - Hand-embroidered ethnicwear celebrating traditional craftsmanship. Custom lehengas, suits, and dupattas made by skilled artisans.',
   robots: {
     follow: true,
     index: true

@@ -10,24 +10,22 @@ async function CollectionList() {
 }
 
 const skeleton = 'mb-3 h-4 w-5/6 animate-pulse rounded-sm';
-const activeAndTitles = 'bg-neutral-800 dark:bg-neutral-300';
-const items = 'bg-neutral-400 dark:bg-neutral-700';
+const activeAndTitles = 'bg-[#BD7263]';
+const items = 'bg-[#212121]/20';
 
 export default function Collections() {
   return (
     <Suspense
       fallback={
-        <div className="col-span-2 hidden h-[400px] w-full flex-none py-4 lg:block">
-          <div className={clsx(skeleton, activeAndTitles)} />
-          <div className={clsx(skeleton, activeAndTitles)} />
-          <div className={clsx(skeleton, items)} />
-          <div className={clsx(skeleton, items)} />
-          <div className={clsx(skeleton, items)} />
-          <div className={clsx(skeleton, items)} />
-          <div className={clsx(skeleton, items)} />
-          <div className={clsx(skeleton, items)} />
-          <div className={clsx(skeleton, items)} />
-          <div className={clsx(skeleton, items)} />
+        <div className="w-full">
+          <div className="mb-4 h-4 w-3/4 animate-pulse rounded bg-[#212121]/20"></div>
+          <div className="space-y-2">
+            <div className={clsx(skeleton, activeAndTitles)} />
+            <div className={clsx(skeleton, items)} />
+            <div className={clsx(skeleton, items)} />
+            <div className={clsx(skeleton, items)} />
+            <div className={clsx(skeleton, items)} />
+          </div>
         </div>
       }
     >
