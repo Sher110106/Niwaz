@@ -1,7 +1,6 @@
 import { readFile } from 'fs/promises';
 import { ImageResponse } from 'next/og';
 import { join } from 'path';
-import LogoIcon from './icons/logo';
 
 export type Props = {
   title?: string;
@@ -24,7 +23,7 @@ export default async function OpengraphImage(
     (
       <div tw="flex h-full w-full flex-col items-center justify-center bg-[#EDE6DF]">
         <div tw="flex flex-none items-center justify-center border border-[#BD7263] h-[160px] w-[160px] rounded-3xl bg-white">
-          <LogoIcon width="64" height="58" fill="#BD7263" />
+          <div tw="text-6xl font-bold text-[#BD7263]">N</div>
         </div>
         <p tw="mt-12 text-6xl font-bold text-[#212121]">{title}</p>
       </div>
