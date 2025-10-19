@@ -1,14 +1,14 @@
-# Resham & Thread - UI Revamp Summary 🎨
+# Niwaz - UI Revamp Summary 🎨
 
 ## Overview
-Complete UI transformation of the e-commerce platform into a minimalist, embroidery-focused brand experience called **Resham & Thread**.
+Complete UI transformation of the e-commerce platform into a minimalist, embroidery-focused brand experience called **Niwaz**.
 
 ---
 
 ## ✅ What Was Created
 
 ### 1. **Brand Identity**
-- **Name:** Resham & Thread (Resham = silk in Hindi/Urdu)
+- **Name:** Niwaz
 - **Story:** Celebrating ancient hand embroidery art with contemporary design
 - **Mission:** Preserving traditional craftsmanship while offering custom, personalized designs
 
@@ -59,7 +59,7 @@ Complete UI transformation of the e-commerce platform into a minimalist, embroid
 ## 3. **Updated Components**
 
 ### Navigation (`/components/layout/navbar/index.tsx`)
-- Brand name: "Resham & Thread"
+- Brand name: "Niwaz"
 - Default navigation menu:
   - Collections
   - Our Story
@@ -228,14 +228,14 @@ The site is organized around three main product categories:
      - `components/layout/footer.tsx`
 
 2. **Update Email & Social Links**
-   - Email: `hello@reshamandthread.in`
-   - Instagram: `@reshamandthread`
+   - Email: `hello@niwaz.in`
+   - Instagram: `@niwaz`
    - Update in `components/layout/footer.tsx`
 
 3. **Set Environment Variables**
    ```
-   SITE_NAME="Resham & Thread"
-   COMPANY_NAME="Resham & Thread"
+   SITE_NAME="Niwaz"
+   COMPANY_NAME="Niwaz"
    ```
 
 4. **Add Products in Shopify**
@@ -298,7 +298,7 @@ BRAND_README.md .................. Complete documentation ✨
 
 You now have a **complete, production-ready** e-commerce website with:
 
-✅ Strong brand identity (Resham & Thread)
+✅ Strong brand identity (Niwaz)
 ✅ 4 new content-rich pages
 ✅ Updated navigation & footer
 ✅ WhatsApp integration for custom orders

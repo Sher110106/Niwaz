@@ -1,4 +1,4 @@
-# ✅ Launch Checklist - Resham & Thread
+# ✅ Launch Checklist - Niwaz
 
 ## Pre-Launch Tasks
 
@@ -21,8 +21,8 @@
   - [ ] Create `.env.local` file
   - [ ] Add `SHOPIFY_STORE_DOMAIN`
   - [ ] Add `SHOPIFY_STOREFRONT_ACCESS_TOKEN`
-  - [ ] Add `SITE_NAME="Resham & Thread"`
-  - [ ] Add `COMPANY_NAME="Resham & Thread"`
+  - [ ] Add `SITE_NAME="Niwaz"`
+  - [ ] Add `COMPANY_NAME="Niwaz"`
 
 ---
 

@@ -1,4 +1,4 @@
-# 🚀 Quick Start Guide - Resham & Thread
+# 🚀 Quick Start Guide - Niwaz
 
 ## Immediate Actions Required
 
@@ -22,8 +22,8 @@ Files to update:
 ### 2. Update Contact Information (2 minutes)
 
 In `components/layout/footer.tsx`:
-- Email: Change `hello@reshamandthread.in` to your email
-- Instagram: Change `@reshamandthread` to your handle
+- Email: Change `hello@niwaz.in` to your email
+- Instagram: Change `@niwaz` to your handle
 
 ### 3. Set Environment Variables
 
@@ -32,8 +32,8 @@ Create or update `.env.local`:
 ```env
 SHOPIFY_STORE_DOMAIN=your-store.myshopify.com
 SHOPIFY_STOREFRONT_ACCESS_TOKEN=your-access-token
-SITE_NAME="Resham & Thread"
-COMPANY_NAME="Resham & Thread"
+SITE_NAME="Niwaz"
+COMPANY_NAME="Niwaz"
 ```
 
 ### 4. Create Shopify Collections

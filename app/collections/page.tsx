@@ -1,7 +1,7 @@
 import Link from 'next/link';
 
 export const metadata = {
-  title: 'Collections - Resham & Thread',
+  title: 'Collections - Niwaz',
   description: 'Explore our hand-embroidered ethnicwear collections including lehengas, suits, and dupattas crafted by skilled artisans.'
 };
 

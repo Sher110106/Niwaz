@@ -60,13 +60,13 @@ export default async function Footer() {
             WhatsApp Chat
           </a>
           <a
-            href="mailto:hello@reshamandthread.in"
+            href="mailto:hello@niwaz.in"
             className="text-[#212121]/70 transition-all duration-300 hover:text-[#BD7263] hover:translate-x-1"
           >
-            hello@reshamandthread.in
+            hello@niwaz.in
           </a>
           <a
-            href="https://instagram.com/reshamandthread"
+            href="https://instagram.com/niwaz"
             className="inline-flex items-center gap-2 text-[#212121]/70 transition-all duration-300 hover:text-[#BD7263] hover:translate-x-1"
             target="_blank"
             rel="noopener noreferrer"

@@ -1,4 +1,4 @@
-# Resham & Thread 🧵
+# Niwaz 🧵
 
 **Hand-embroidered ethnicwear celebrating traditional craftsmanship**
 
@@ -8,7 +8,7 @@ A modern e-commerce platform built with Next.js 15, showcasing the art of tradit
 
 ## 🎨 Brand Identity
 
-**Resham & Thread** (Resham means silk in Hindi/Urdu) represents the fusion of ancient embroidery art with contemporary design sensibilities.
+**Niwaz** represents the fusion of ancient embroidery art with contemporary design sensibilities.
 
 ### Brand Story
 We preserve the ancient techniques of hand embroidery while embracing contemporary aesthetics, creating timeless pieces that celebrate both heritage and modernity. Each piece is crafted by skilled artisans who have honed their craft over generations.
@@ -129,8 +129,8 @@ cp .env.example .env.local
 # Add your Shopify credentials to .env.local
 SHOPIFY_STORE_DOMAIN=your-store.myshopify.com
 SHOPIFY_STOREFRONT_ACCESS_TOKEN=your-access-token
-SITE_NAME="Resham & Thread"
-COMPANY_NAME="Resham & Thread"
+SITE_NAME="Niwaz"
+COMPANY_NAME="Niwaz"
 
 # Run development server
 pnpm dev
@@ -283,8 +283,8 @@ Change fonts in `app/globals.css` by updating the Google Fonts import URL.
 ```
 SHOPIFY_STORE_DOMAIN=your-store.myshopify.com
 SHOPIFY_STOREFRONT_ACCESS_TOKEN=your-token
-SITE_NAME=Resham & Thread
-COMPANY_NAME=Resham & Thread
+SITE_NAME=Niwaz
+COMPANY_NAME=Niwaz
 ```
 
 ---
@@ -307,7 +307,7 @@ See `license.md`
 
 ## 💬 Support
 
-For custom design inquiries: WhatsApp or email hello@reshamandthread.in
+For custom design inquiries: WhatsApp or email hello@niwaz.in
 
 For technical issues: Create an issue in the repository
 

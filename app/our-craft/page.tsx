@@ -4,7 +4,7 @@ import Link from 'next/link';
 export const metadata = {
   title: 'Our Craft',
   description:
-    'Discover the intricate art of hand embroidery - the techniques, traditions, and talented artisans behind every Resham & Thread creation.'
+    'Discover the intricate art of hand embroidery - the techniques, traditions, and talented artisans behind every Niwaz creation.'
 };
 
 export default function OurCraftPage() {
@@ -235,7 +235,7 @@ export default function OurCraftPage() {
               The Hands Behind the Art
             </h2>
             <p className="mb-12 text-lg text-[#212121]/70">
-              Our artisans are the heart of Resham & Thread. Each brings decades of experience and a
+              Our artisans are the heart of Niwaz. Each brings decades of experience and a
               deep love for their craft.
             </p>
 

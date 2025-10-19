@@ -4,7 +4,7 @@ import Link from 'next/link';
 export const metadata = {
   title: 'Our Story',
   description:
-    'Learn about Resham & Thread - our journey, our artisans, and our commitment to preserving traditional embroidery craftsmanship.'
+    'Learn about Niwaz - our journey, our artisans, and our commitment to preserving traditional embroidery craftsmanship.'
 };
 
 export default function OurStoryPage() {
@@ -31,7 +31,7 @@ export default function OurStoryPage() {
             <div className="prose prose-lg max-w-none">
               <h2 className="font-serif text-3xl font-bold text-[#212121]">The Beginning</h2>
               <p className="text-[#212121]/80">
-                Resham & Thread was born from a simple belief: that the ancient art of hand
+                Niwaz was born from a simple belief: that the ancient art of hand
                 embroidery deserves to thrive in the modern world. Our founder, inspired by her
                 grandmother's intricate needlework, set out to create a platform where master
                 artisans could showcase their exceptional skills to a global audience.
@@ -56,7 +56,7 @@ export default function OurStoryPage() {
               </p>
 
               <p className="text-[#212121]/80">
-                When you choose Resham & Thread, you're not just buying a garment. You're supporting
+                When you choose Niwaz, you're not just buying a garment. You're supporting
                 artisan livelihoods, preserving cultural heritage, and investing in a piece that
                 will be treasured for years to come.
               </p>

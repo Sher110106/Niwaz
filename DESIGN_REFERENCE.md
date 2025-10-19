@@ -1,4 +1,4 @@
-# 🎨 Visual Design Reference - Resham & Thread
+# 🎨 Visual Design Reference - Niwaz
 
 ## Color Swatches
 
