@@ -49,6 +49,30 @@ export function ProductDescription({ product }: { product: Product }) {
         </div>
       ) : null}
 
+      {/* WhatsApp Order Notice */}
+      <div className="rounded-xl bg-[#25D366]/10 border border-[#25D366]/20 p-4">
+        <div className="flex items-start space-x-3">
+          <div className="flex-shrink-0">
+            <span className="text-2xl">💬</span>
+          </div>
+          <div className="flex-1">
+            <h3 className="text-sm font-semibold text-[#212121] mb-1">
+              Orders via WhatsApp Only
+            </h3>
+            <p className="text-xs text-[#212121]/70 mb-3">
+              We're currently taking orders exclusively through WhatsApp for a personalized shopping experience.
+            </p>
+            <a
+              href={`https://wa.me/918708491362?text=Hi! I'm interested in this product: ${product.title}. Can you help me place an order?`}
+              className="inline-flex items-center rounded-full bg-[#25D366] px-4 py-2 text-xs font-medium text-white transition-all duration-200 hover:bg-[#20C55A] hover:scale-105"
+            >
+              <span className="mr-1">📱</span>
+              Order on WhatsApp
+            </a>
+          </div>
+        </div>
+      </div>
+
       {/* Action Buttons */}
       <div className="space-y-4">
         <AddToCart product={product} />

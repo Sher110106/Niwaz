@@ -3,15 +3,13 @@
 import { Dialog, Transition } from '@headlessui/react';
 import { ShoppingCartIcon, XMarkIcon } from '@heroicons/react/24/outline';
 import clsx from 'clsx';
-import LoadingDots from 'components/loading-dots';
 import Price from 'components/price';
 import { DEFAULT_OPTION } from 'lib/constants';
 import { createUrl } from 'lib/utils';
 import Image from 'next/image';
 import Link from 'next/link';
 import { Fragment, useEffect, useRef, useState } from 'react';
-import { useFormStatus } from 'react-dom';
-import { createCartAndSetCookie, redirectToCheckout } from './actions';
+import { createCartAndSetCookie } from './actions';
 import { useCart } from './cart-context';
 import { DeleteItemButton } from './delete-item-button';
 import { EditItemQuantityButton } from './edit-item-quantity-button';
@@ -214,9 +212,31 @@ export default function CartModal() {
                       />
                     </div>
                   </div>
-                  <form action={redirectToCheckout}>
-                    <CheckoutButton />
-                  </form>
+                  {/* WhatsApp Order Notice */}
+                  <div className="mb-4 rounded-xl bg-[#25D366]/10 border border-[#25D366]/20 p-4">
+                    <div className="flex items-start space-x-3">
+                      <div className="flex-shrink-0">
+                        <span className="text-2xl">💬</span>
+                      </div>
+                      <div className="flex-1">
+                        <h3 className="text-sm font-semibold text-[#212121] mb-1">
+                          Orders via WhatsApp Only
+                        </h3>
+                        <p className="text-xs text-[#212121]/70 mb-3">
+                          We're currently taking orders exclusively through WhatsApp for a personalized experience.
+                        </p>
+                        <a
+                          href="https://wa.me/918708491362?text=Hi! I'd like to place an order for the items in my cart."
+                          className="inline-flex items-center rounded-full bg-[#25D366] px-4 py-2 text-xs font-medium text-white transition-all duration-200 hover:bg-[#20C55A] hover:scale-105"
+                        >
+                          <span className="mr-1">📱</span>
+                          Order on WhatsApp
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+
+                  <CheckoutButton />
                 </div>
               )}
             </Dialog.Panel>
@@ -241,15 +261,16 @@ function CloseCart({ className }: { className?: string }) {
 }
 
 function CheckoutButton() {
-  const { pending } = useFormStatus();
-
   return (
     <button
       className="block w-full rounded-full bg-[#BD7263] p-3 text-center text-sm font-medium text-white opacity-95 hover:opacity-100"
-      type="submit"
-      disabled={pending}
+      type="button"
+      onClick={() => {
+        // Just show a message or do nothing - the cart summary is already visible
+        console.log('Cart summary is already displayed');
+      }}
     >
-      {pending ? <LoadingDots className="bg-white" /> : 'Proceed to Checkout'}
+      View Cart Summary
     </button>
   );
 }

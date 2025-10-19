@@ -44,7 +44,7 @@ function SubmitButton({
 
   return (
     <button
-      aria-label="Add to cart"
+      aria-label="Add to cart for WhatsApp order"
       className={clsx(buttonClasses, {
         'hover:opacity-90': true
       })}
@@ -52,7 +52,7 @@ function SubmitButton({
       <div className="absolute left-0 ml-4">
         <PlusIcon className="h-5" />
       </div>
-      Add To Cart
+      Add To Cart (WhatsApp Order)
     </button>
   );
 }

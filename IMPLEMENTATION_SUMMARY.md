@@ -144,17 +144,17 @@ WhatsApp: #25D366 (brand green)
 
 The site is organized around three main product categories:
 
-### Lehengas (`/search/lehengas`)
+### Lehengas (`/collection/lehengas`)
 - "Regal ensembles for grand occasions"
 - Wedding & festive wear
 - Heavy embroidery focus
 
-### Suits & Kurtas (`/search/suits`)
+### Suits & Kurtas (`/collection/suits`)
 - "Everyday elegance, masterfully crafted"
 - Casual to semi-formal
 - Versatile designs
 
-### Dupattas & Stoles (`/search/dupattas`)
+### Dupattas & Stoles (`/collection/dupattas`)
 - "The finishing touch to every outfit"
 - Accessories & accent pieces
 - Lightweight embroidery

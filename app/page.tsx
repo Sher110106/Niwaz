@@ -140,7 +140,7 @@ export default function HomePage() {
 
           <div className="grid gap-6 sm:gap-8 md:grid-cols-2 lg:gap-8 lg:grid-cols-3">
             {/* Lehengas */}
-            <Link href="/search/lehengas" className="group relative overflow-hidden rounded-2xl shadow-lg transition-all duration-500 hover:shadow-2xl hover:scale-[1.03] hover:-translate-y-2">
+            <Link href="/search" className="group relative overflow-hidden rounded-2xl shadow-lg transition-all duration-500 hover:shadow-2xl hover:scale-[1.03] hover:-translate-y-2">
               <div className="aspect-[4/5] overflow-hidden">
                 <img
                   src="/Gemini_Generated_Image_z3276gz3276gz327.png"
@@ -161,7 +161,7 @@ export default function HomePage() {
             </Link>
 
             {/* Suits & Kurtas */}
-            <Link href="/search/suits" className="group relative overflow-hidden rounded-2xl shadow-lg transition-all duration-500 hover:shadow-2xl hover:scale-[1.03] hover:-translate-y-2">
+            <Link href="/search" className="group relative overflow-hidden rounded-2xl shadow-lg transition-all duration-500 hover:shadow-2xl hover:scale-[1.03] hover:-translate-y-2">
               <div className="aspect-[4/5] overflow-hidden">
                 <img
                   src="/Gemini_Generated_Image_98vxea98vxea98vx (1).png"
@@ -182,7 +182,7 @@ export default function HomePage() {
             </Link>
 
             {/* Dupattas & Stoles */}
-            <Link href="/search/dupattas" className="group relative overflow-hidden rounded-2xl shadow-lg transition-all duration-500 hover:shadow-2xl hover:scale-[1.03] hover:-translate-y-2 md:col-span-2 lg:col-span-1">
+            <Link href="/search" className="group relative overflow-hidden rounded-2xl shadow-lg transition-all duration-500 hover:shadow-2xl hover:scale-[1.03] hover:-translate-y-2 md:col-span-2 lg:col-span-1">
               <div className="aspect-[4/5] overflow-hidden">
                 <img
                   src="/Gemini_Generated_Image_kyuxlwkyuxlwkyux.png"

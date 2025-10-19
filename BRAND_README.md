@@ -46,9 +46,9 @@ We preserve the ancient techniques of hand embroidery while embracing contempora
    - Search functionality
 
 3. **Collection Pages**
-   - `/search/lehengas` - Regal ensembles
-   - `/search/suits` - Suits & Kurtas
-   - `/search/dupattas` - Dupattas & Stoles
+   - `/collection/lehengas` - Regal ensembles
+   - `/collection/suits` - Suits & Kurtas
+   - `/collection/dupattas` - Dupattas & Stoles
 
 4. **Our Story** (`/our-story`)
    - Brand heritage and mission

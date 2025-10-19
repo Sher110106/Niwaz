@@ -8,7 +8,7 @@ export function WelcomeToast() {
     // ignore if screen height is too small
     if (window.innerHeight < 650) return;
     if (!document.cookie.includes('welcome-toast=2')) {
-      toast('🛍️ Welcome to Next.js Commerce!', {
+      toast('✨ Welcome to Resham & Thread!', {
         id: 'welcome-toast',
         duration: Infinity,
         onDismiss: () => {
@@ -16,13 +16,12 @@ export function WelcomeToast() {
         },
         description: (
           <>
-            This is a high-performance, SSR storefront powered by Shopify, Next.js, and Vercel.{' '}
+            Discover exquisite hand-embroidered ethnicwear crafted by skilled artisans across India.{' '}
             <a
-              href="https://vercel.com/templates/next.js/nextjs-commerce"
+              href="/custom"
               className="text-blue-600 hover:underline"
-              target="_blank"
             >
-              Deploy your own
+              Order custom designs
             </a>
             .
           </>

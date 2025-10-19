@@ -331,7 +331,7 @@ Scale: 300ms ease-out
 
 ### Collection Card
 ```tsx
-<Link href="/search/lehengas" className="group relative overflow-hidden rounded-2xl">
+<Link href="/collection/lehengas" className="group relative overflow-hidden rounded-2xl">
   <div className="aspect-[4/5] bg-gradient-to-br from-[#f5e6e0] to-[#e8d5ce]">
     {/* Image */}
   </div>
