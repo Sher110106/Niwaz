@@ -1,6 +1,6 @@
 import { Cart } from 'lib/shopify/types';
 
-export function generateWhatsAppMessage(cart: Cart | null, productTitle?: string): string {
+export function generateWhatsAppMessage(cart: Cart | null | undefined, productTitle?: string): string {
   const baseMessage = "Hi! I'd like to place an order";
   
   if (productTitle) {
@@ -13,8 +13,8 @@ export function generateWhatsAppMessage(cart: Cart | null, productTitle?: string
     const items = cart.lines.map(line => {
       const productTitle = line.merchandise?.product?.title || 'Unknown Product';
       const quantity = line.quantity || 1;
-      const price = line.merchandise?.price?.amount || '0';
-      const currency = line.merchandise?.price?.currencyCode || 'USD';
+      const price = line.cost?.totalAmount?.amount || '0';
+      const currency = line.cost?.totalAmount?.currencyCode || 'USD';
       
       return `• *${productTitle}* (Qty: ${quantity}) - ${currency} ${price}`;
     }).join('\n');
@@ -29,7 +29,7 @@ export function generateWhatsAppMessage(cart: Cart | null, productTitle?: string
   return `${baseMessage}. Can you help me?`;
 }
 
-export function generateWhatsAppUrl(cart: Cart | null, productTitle?: string): string {
+export function generateWhatsAppUrl(cart: Cart | null | undefined, productTitle?: string): string {
   const message = generateWhatsAppMessage(cart, productTitle);
   const encodedMessage = encodeURIComponent(message);
   return `https://wa.me/918708491362?text=${encodedMessage}`;
