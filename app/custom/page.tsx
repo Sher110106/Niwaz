@@ -24,7 +24,7 @@ export default function CustomPage() {
               masterpiece
             </p>
             <a
-              href="https://wa.me/91XXXXXXXXXX?text=I%20want%20a%20custom%20design"
+              href="https://wa.me/918708491362?text=I%20want%20a%20custom%20design"
               className="inline-flex items-center gap-3 rounded-full bg-[#25D366] px-8 py-4 text-lg font-semibold text-white shadow-lg transition-all hover:scale-105 hover:shadow-xl"
             >
               <svg className="h-6 w-6" fill="currentColor" viewBox="0 0 24 24">
@@ -48,50 +48,50 @@ export default function CustomPage() {
             </div>
 
             <div className="grid gap-8 md:grid-cols-4">
-              <div className="text-center">
-                <div className="mb-4 inline-flex h-16 w-16 items-center justify-center rounded-full bg-[#547B6F] text-2xl font-bold text-white">
+              <div className="group text-center transition-all duration-300 hover:scale-105">
+                <div className="mb-4 inline-flex h-16 w-16 items-center justify-center rounded-full bg-gradient-to-br from-[#547B6F] to-[#456b5f] text-2xl font-bold text-white shadow-lg transition-all duration-300 group-hover:shadow-xl group-hover:scale-110">
                   1
                 </div>
-                <h3 className="mb-2 font-serif text-xl font-bold text-[#212121]">
+                <h3 className="mb-2 font-serif text-xl font-bold text-[#212121] transition-colors duration-300 group-hover:text-[#BD7263]">
                   Share Your Vision
                 </h3>
-                <p className="text-sm text-[#212121]/70">
+                <p className="text-sm text-[#212121]/70 leading-relaxed">
                   Message us on WhatsApp with your ideas, inspiration images, or reference photos
                 </p>
               </div>
 
-              <div className="text-center">
-                <div className="mb-4 inline-flex h-16 w-16 items-center justify-center rounded-full bg-[#547B6F] text-2xl font-bold text-white">
+              <div className="group text-center transition-all duration-300 hover:scale-105">
+                <div className="mb-4 inline-flex h-16 w-16 items-center justify-center rounded-full bg-gradient-to-br from-[#547B6F] to-[#456b5f] text-2xl font-bold text-white shadow-lg transition-all duration-300 group-hover:shadow-xl group-hover:scale-110">
                   2
                 </div>
-                <h3 className="mb-2 font-serif text-xl font-bold text-[#212121]">
+                <h3 className="mb-2 font-serif text-xl font-bold text-[#212121] transition-colors duration-300 group-hover:text-[#BD7263]">
                   Design Consultation
                 </h3>
-                <p className="text-sm text-[#212121]/70">
+                <p className="text-sm text-[#212121]/70 leading-relaxed">
                   Our design team helps refine your concept, suggesting fabrics, colors, and
                   embroidery styles
                 </p>
               </div>
 
-              <div className="text-center">
-                <div className="mb-4 inline-flex h-16 w-16 items-center justify-center rounded-full bg-[#547B6F] text-2xl font-bold text-white">
+              <div className="group text-center transition-all duration-300 hover:scale-105">
+                <div className="mb-4 inline-flex h-16 w-16 items-center justify-center rounded-full bg-gradient-to-br from-[#547B6F] to-[#456b5f] text-2xl font-bold text-white shadow-lg transition-all duration-300 group-hover:shadow-xl group-hover:scale-110">
                   3
                 </div>
-                <h3 className="mb-2 font-serif text-xl font-bold text-[#212121]">
+                <h3 className="mb-2 font-serif text-xl font-bold text-[#212121] transition-colors duration-300 group-hover:text-[#BD7263]">
                   Artisan Crafting
                 </h3>
-                <p className="text-sm text-[#212121]/70">
+                <p className="text-sm text-[#212121]/70 leading-relaxed">
                   Your piece is hand-embroidered by our skilled artisans, with progress updates
                   along the way
                 </p>
               </div>
 
-              <div className="text-center">
-                <div className="mb-4 inline-flex h-16 w-16 items-center justify-center rounded-full bg-[#547B6F] text-2xl font-bold text-white">
+              <div className="group text-center transition-all duration-300 hover:scale-105">
+                <div className="mb-4 inline-flex h-16 w-16 items-center justify-center rounded-full bg-gradient-to-br from-[#547B6F] to-[#456b5f] text-2xl font-bold text-white shadow-lg transition-all duration-300 group-hover:shadow-xl group-hover:scale-110">
                   4
                 </div>
-                <h3 className="mb-2 font-serif text-xl font-bold text-[#212121]">Delivery</h3>
-                <p className="text-sm text-[#212121]/70">
+                <h3 className="mb-2 font-serif text-xl font-bold text-[#212121] transition-colors duration-300 group-hover:text-[#BD7263]">Delivery</h3>
+                <p className="text-sm text-[#212121]/70 leading-relaxed">
                   Receive your bespoke creation, beautifully packaged and ready to cherish
                 </p>
               </div>
@@ -109,86 +109,148 @@ export default function CustomPage() {
             </div>
 
             <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
-              <div className="rounded-2xl bg-white p-8 shadow-sm">
-                <div className="mb-4 text-4xl">🧵</div>
-                <h3 className="mb-3 font-serif text-xl font-bold text-[#212121]">
+              <div className="group rounded-2xl bg-white p-8 shadow-lg transition-all duration-300 hover:shadow-xl hover:scale-105 hover:-translate-y-1">
+                <div className="mb-4 text-4xl transition-transform duration-300 group-hover:scale-110">🧵</div>
+                <h3 className="mb-3 font-serif text-xl font-bold text-[#212121] transition-colors duration-300 group-hover:text-[#BD7263]">
                   Embroidery Style
                 </h3>
                 <ul className="space-y-2 text-sm text-[#212121]/70">
-                  <li>• Zardozi (metallic thread work)</li>
-                  <li>• Resham (silk thread)</li>
-                  <li>• Mirror work (shisha)</li>
-                  <li>• Cutdana & sequins</li>
-                  <li>• Chikankari</li>
-                  <li>• Aari work</li>
+                  <li className="flex items-center gap-2">
+                    <span className="text-[#547B6F]">•</span> Zardozi (metallic thread work)
+                  </li>
+                  <li className="flex items-center gap-2">
+                    <span className="text-[#547B6F]">•</span> Resham (silk thread)
+                  </li>
+                  <li className="flex items-center gap-2">
+                    <span className="text-[#547B6F]">•</span> Mirror work (shisha)
+                  </li>
+                  <li className="flex items-center gap-2">
+                    <span className="text-[#547B6F]">•</span> Cutdana & sequins
+                  </li>
+                  <li className="flex items-center gap-2">
+                    <span className="text-[#547B6F]">•</span> Chikankari
+                  </li>
+                  <li className="flex items-center gap-2">
+                    <span className="text-[#547B6F]">•</span> Aari work
+                  </li>
                 </ul>
               </div>
 
-              <div className="rounded-2xl bg-white p-8 shadow-sm">
-                <div className="mb-4 text-4xl">🎨</div>
-                <h3 className="mb-3 font-serif text-xl font-bold text-[#212121]">
+              <div className="group rounded-2xl bg-white p-8 shadow-lg transition-all duration-300 hover:shadow-xl hover:scale-105 hover:-translate-y-1">
+                <div className="mb-4 text-4xl transition-transform duration-300 group-hover:scale-110">🎨</div>
+                <h3 className="mb-3 font-serif text-xl font-bold text-[#212121] transition-colors duration-300 group-hover:text-[#BD7263]">
                   Colors & Fabrics
                 </h3>
                 <ul className="space-y-2 text-sm text-[#212121]/70">
-                  <li>• Choose from 100+ fabric options</li>
-                  <li>• Custom color combinations</li>
-                  <li>• Silk, georgette, chiffon, velvet</li>
-                  <li>• Contrast or tone-on-tone</li>
-                  <li>• Premium or budget-friendly</li>
+                  <li className="flex items-center gap-2">
+                    <span className="text-[#547B6F]">•</span> Choose from 100+ fabric options
+                  </li>
+                  <li className="flex items-center gap-2">
+                    <span className="text-[#547B6F]">•</span> Custom color combinations
+                  </li>
+                  <li className="flex items-center gap-2">
+                    <span className="text-[#547B6F]">•</span> Silk, georgette, chiffon, velvet
+                  </li>
+                  <li className="flex items-center gap-2">
+                    <span className="text-[#547B6F]">•</span> Contrast or tone-on-tone
+                  </li>
+                  <li className="flex items-center gap-2">
+                    <span className="text-[#547B6F]">•</span> Premium or budget-friendly
+                  </li>
                 </ul>
               </div>
 
-              <div className="rounded-2xl bg-white p-8 shadow-sm">
-                <div className="mb-4 text-4xl">📏</div>
-                <h3 className="mb-3 font-serif text-xl font-bold text-[#212121]">
+              <div className="group rounded-2xl bg-white p-8 shadow-lg transition-all duration-300 hover:shadow-xl hover:scale-105 hover:-translate-y-1">
+                <div className="mb-4 text-4xl transition-transform duration-300 group-hover:scale-110">📏</div>
+                <h3 className="mb-3 font-serif text-xl font-bold text-[#212121] transition-colors duration-300 group-hover:text-[#BD7263]">
                   Size & Silhouette
                 </h3>
                 <ul className="space-y-2 text-sm text-[#212121]/70">
-                  <li>• Made-to-measure sizing</li>
-                  <li>• Custom length adjustments</li>
-                  <li>• Neckline variations</li>
-                  <li>• Sleeve styles</li>
-                  <li>• Blouse/choli designs</li>
+                  <li className="flex items-center gap-2">
+                    <span className="text-[#547B6F]">•</span> Made-to-measure sizing
+                  </li>
+                  <li className="flex items-center gap-2">
+                    <span className="text-[#547B6F]">•</span> Custom length adjustments
+                  </li>
+                  <li className="flex items-center gap-2">
+                    <span className="text-[#547B6F]">•</span> Neckline variations
+                  </li>
+                  <li className="flex items-center gap-2">
+                    <span className="text-[#547B6F]">•</span> Sleeve styles
+                  </li>
+                  <li className="flex items-center gap-2">
+                    <span className="text-[#547B6F]">•</span> Blouse/choli designs
+                  </li>
                 </ul>
               </div>
 
-              <div className="rounded-2xl bg-white p-8 shadow-sm">
-                <div className="mb-4 text-4xl">✨</div>
-                <h3 className="mb-3 font-serif text-xl font-bold text-[#212121]">
+              <div className="group rounded-2xl bg-white p-8 shadow-lg transition-all duration-300 hover:shadow-xl hover:scale-105 hover:-translate-y-1">
+                <div className="mb-4 text-4xl transition-transform duration-300 group-hover:scale-110">✨</div>
+                <h3 className="mb-3 font-serif text-xl font-bold text-[#212121] transition-colors duration-300 group-hover:text-[#BD7263]">
                   Design Motifs
                 </h3>
                 <ul className="space-y-2 text-sm text-[#212121]/70">
-                  <li>• Floral patterns</li>
-                  <li>• Geometric designs</li>
-                  <li>• Traditional motifs</li>
-                  <li>• Contemporary abstracts</li>
-                  <li>• Personalized monograms</li>
+                  <li className="flex items-center gap-2">
+                    <span className="text-[#547B6F]">•</span> Floral patterns
+                  </li>
+                  <li className="flex items-center gap-2">
+                    <span className="text-[#547B6F]">•</span> Geometric designs
+                  </li>
+                  <li className="flex items-center gap-2">
+                    <span className="text-[#547B6F]">•</span> Traditional motifs
+                  </li>
+                  <li className="flex items-center gap-2">
+                    <span className="text-[#547B6F]">•</span> Contemporary abstracts
+                  </li>
+                  <li className="flex items-center gap-2">
+                    <span className="text-[#547B6F]">•</span> Personalized monograms
+                  </li>
                 </ul>
               </div>
 
-              <div className="rounded-2xl bg-white p-8 shadow-sm">
-                <div className="mb-4 text-4xl">💎</div>
-                <h3 className="mb-3 font-serif text-xl font-bold text-[#212121]">Embellishments</h3>
+              <div className="group rounded-2xl bg-white p-8 shadow-lg transition-all duration-300 hover:shadow-xl hover:scale-105 hover:-translate-y-1">
+                <div className="mb-4 text-4xl transition-transform duration-300 group-hover:scale-110">💎</div>
+                <h3 className="mb-3 font-serif text-xl font-bold text-[#212121] transition-colors duration-300 group-hover:text-[#BD7263]">Embellishments</h3>
                 <ul className="space-y-2 text-sm text-[#212121]/70">
-                  <li>• Pearls & beads</li>
-                  <li>• Stones & crystals</li>
-                  <li>• Gota patti borders</li>
-                  <li>• Tassels & latkan</li>
-                  <li>• Zari & dori work</li>
+                  <li className="flex items-center gap-2">
+                    <span className="text-[#547B6F]">•</span> Pearls & beads
+                  </li>
+                  <li className="flex items-center gap-2">
+                    <span className="text-[#547B6F]">•</span> Stones & crystals
+                  </li>
+                  <li className="flex items-center gap-2">
+                    <span className="text-[#547B6F]">•</span> Gota patti borders
+                  </li>
+                  <li className="flex items-center gap-2">
+                    <span className="text-[#547B6F]">•</span> Tassels & latkan
+                  </li>
+                  <li className="flex items-center gap-2">
+                    <span className="text-[#547B6F]">•</span> Zari & dori work
+                  </li>
                 </ul>
               </div>
 
-              <div className="rounded-2xl bg-white p-8 shadow-sm">
-                <div className="mb-4 text-4xl">🎁</div>
-                <h3 className="mb-3 font-serif text-xl font-bold text-[#212121]">
+              <div className="group rounded-2xl bg-white p-8 shadow-lg transition-all duration-300 hover:shadow-xl hover:scale-105 hover:-translate-y-1">
+                <div className="mb-4 text-4xl transition-transform duration-300 group-hover:scale-110">🎁</div>
+                <h3 className="mb-3 font-serif text-xl font-bold text-[#212121] transition-colors duration-300 group-hover:text-[#BD7263]">
                   Special Requests
                 </h3>
                 <ul className="space-y-2 text-sm text-[#212121]/70">
-                  <li>• Bridal trousseau sets</li>
-                  <li>• Mother-daughter matching</li>
-                  <li>• Coordinated family outfits</li>
-                  <li>• Occasion-specific designs</li>
-                  <li>• Heritage recreations</li>
+                  <li className="flex items-center gap-2">
+                    <span className="text-[#547B6F]">•</span> Bridal trousseau sets
+                  </li>
+                  <li className="flex items-center gap-2">
+                    <span className="text-[#547B6F]">•</span> Mother-daughter matching
+                  </li>
+                  <li className="flex items-center gap-2">
+                    <span className="text-[#547B6F]">•</span> Coordinated family outfits
+                  </li>
+                  <li className="flex items-center gap-2">
+                    <span className="text-[#547B6F]">•</span> Occasion-specific designs
+                  </li>
+                  <li className="flex items-center gap-2">
+                    <span className="text-[#547B6F]">•</span> Heritage recreations
+                  </li>
                 </ul>
               </div>
             </div>
@@ -278,7 +340,7 @@ export default function CustomPage() {
               Let's bring your vision to life. Chat with our design team today.
             </p>
             <a
-              href="https://wa.me/91XXXXXXXXXX?text=I%20want%20a%20custom%20design"
+              href="https://wa.me/918708491362?text=I%20want%20a%20custom%20design"
               className="inline-flex items-center gap-3 rounded-full bg-[#25D366] px-10 py-5 text-xl font-semibold text-white shadow-lg transition-all hover:scale-105 hover:shadow-xl"
             >
               <svg className="h-7 w-7" fill="currentColor" viewBox="0 0 24 24">

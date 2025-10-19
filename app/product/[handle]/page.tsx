@@ -16,7 +16,10 @@ export async function generateMetadata(props: {
   params: Promise<{ handle: string }>;
 }): Promise<Metadata> {
   const params = await props.params;
-  const product = await getProduct(params.handle);
+  
+  // Decode the handle to handle URL-encoded characters like emojis
+  const decodedHandle = decodeURIComponent(params.handle);
+  const product = await getProduct(decodedHandle);
 
   if (!product) return notFound();
 
@@ -51,9 +54,16 @@ export async function generateMetadata(props: {
 
 export default async function ProductPage(props: { params: Promise<{ handle: string }> }) {
   const params = await props.params;
-  const product = await getProduct(params.handle);
+  
+  // Decode the handle to handle URL-encoded characters like emojis
+  const decodedHandle = decodeURIComponent(params.handle);
+  
+  const product = await getProduct(decodedHandle);
 
-  if (!product) return notFound();
+  if (!product) {
+    console.error(`Product not found for handle: ${params.handle} (decoded: ${decodedHandle})`);
+    return notFound();
+  }
 
   const productJsonLd = {
     '@context': 'https://schema.org',
@@ -80,30 +90,32 @@ export default async function ProductPage(props: { params: Promise<{ handle: str
           __html: JSON.stringify(productJsonLd)
         }}
       />
-      <div className="mx-auto max-w-(--breakpoint-2xl) px-4">
-        <div className="flex flex-col rounded-lg border border-[#ECECEC] bg-white p-8 md:p-12 lg:flex-row lg:gap-8 shadow-sm">
-          <div className="h-full w-full basis-full lg:basis-4/6">
-            <Suspense
-              fallback={
-                <div className="relative aspect-square h-full max-h-[550px] w-full overflow-hidden" />
-              }
-            >
-              <Gallery
-                images={product.images.slice(0, 5).map((image: Image) => ({
-                  src: image.url,
-                  altText: image.altText
-                }))}
-              />
-            </Suspense>
-          </div>
+      <div className="min-h-screen bg-[#EDE6DF]">
+        <div className="mx-auto max-w-7xl px-4 py-8 sm:px-6 lg:px-8">
+          <div className="flex flex-col rounded-3xl border border-[#ECECEC] bg-white p-6 md:p-8 lg:flex-row lg:gap-12 shadow-lg">
+            <div className="h-full w-full basis-full lg:basis-3/5">
+              <Suspense
+                fallback={
+                  <div className="relative aspect-square h-full max-h-[600px] w-full overflow-hidden rounded-2xl bg-[#EDE6DF]" />
+                }
+              >
+                <Gallery
+                  images={product.images.slice(0, 5).map((image: Image) => ({
+                    src: image.url,
+                    altText: image.altText
+                  }))}
+                />
+              </Suspense>
+            </div>
 
-          <div className="basis-full lg:basis-2/6">
-            <Suspense fallback={null}>
-              <ProductDescription product={product} />
-            </Suspense>
+            <div className="basis-full lg:basis-2/5">
+              <Suspense fallback={null}>
+                <ProductDescription product={product} />
+              </Suspense>
+            </div>
           </div>
+          <RelatedProducts id={product.id} />
         </div>
-        <RelatedProducts id={product.id} />
       </div>
       <Footer />
     </ProductProvider>
@@ -116,17 +128,20 @@ async function RelatedProducts({ id }: { id: string }) {
   if (!relatedProducts.length) return null;
 
   return (
-    <div className="py-8">
-      <h2 className="mb-4 text-2xl font-bold text-[#212121]">Related Products</h2>
-      <ul className="flex w-full gap-4 overflow-x-auto pt-1">
+    <div className="mt-16 space-y-8">
+      <div className="text-center">
+        <h2 className="text-3xl font-serif font-medium text-[#212121]">You Might Also Like</h2>
+        <p className="mt-2 text-[#212121]/60">Discover more hand embroidered pieces</p>
+      </div>
+      <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
         {relatedProducts.map((product) => (
-          <li
+          <div
             key={product.handle}
-            className="aspect-square w-full flex-none min-[475px]:w-1/2 sm:w-1/3 md:w-1/4 lg:w-1/5"
+            className="group"
           >
             <Link
-              className="relative h-full w-full"
-              href={`/product/${product.handle}`}
+              className="relative block h-full w-full"
+              href={`/product/${encodeURIComponent(product.handle)}`}
               prefetch={true}
             >
               <GridTileImage
@@ -138,12 +153,12 @@ async function RelatedProducts({ id }: { id: string }) {
                 }}
                 src={product.featuredImage?.url}
                 fill
-                sizes="(min-width: 1024px) 20vw, (min-width: 768px) 25vw, (min-width: 640px) 33vw, (min-width: 475px) 50vw, 100vw"
+                sizes="(min-width: 1024px) 25vw, (min-width: 768px) 33vw, (min-width: 640px) 50vw, 100vw"
               />
             </Link>
-          </li>
+          </div>
         ))}
-      </ul>
+      </div>
     </div>
   );
 }

@@ -5,7 +5,7 @@ import clsx from 'clsx';
 export default function WhatsAppFab() {
   return (
     <a
-      href="https://wa.me/91XXXXXXXXXX?text=I%20want%20a%20custom%20design"
+      href="https://wa.me/918708491362?text=I%20want%20a%20custom%20design"
       aria-label="Chat on WhatsApp for custom designs"
       className={clsx(
         'fixed bottom-6 right-6 z-50 flex items-center gap-3 rounded-full bg-[#25D366] px-5 py-4 text-sm font-semibold text-white shadow-2xl transition-all hover:scale-105 hover:bg-[#20bd5a] hover:shadow-3xl',

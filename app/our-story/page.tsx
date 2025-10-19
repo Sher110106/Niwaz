@@ -63,25 +63,25 @@ export default function OurStoryPage() {
             </div>
 
             <div className="mt-16 grid gap-8 md:grid-cols-3">
-              <div className="rounded-2xl bg-[#EDE6DF] p-8 text-center">
-                <div className="mb-4 text-4xl">🪡</div>
-                <h3 className="mb-2 font-serif text-xl font-bold text-[#212121]">
+              <div className="group rounded-2xl bg-[#EDE6DF] p-8 text-center transition-all duration-300 hover:shadow-lg hover:scale-105">
+                <div className="mb-4 text-4xl transition-transform duration-300 group-hover:scale-110">🪡</div>
+                <h3 className="mb-2 font-serif text-xl font-bold text-[#212121] transition-colors duration-300 group-hover:text-[#BD7263]">
                   100% Hand Embroidered
                 </h3>
                 <p className="text-sm text-[#212121]/70">
                   Every stitch crafted by skilled artisan hands
                 </p>
               </div>
-              <div className="rounded-2xl bg-[#EDE6DF] p-8 text-center">
-                <div className="mb-4 text-4xl">🌱</div>
-                <h3 className="mb-2 font-serif text-xl font-bold text-[#212121]">
+              <div className="group rounded-2xl bg-[#EDE6DF] p-8 text-center transition-all duration-300 hover:shadow-lg hover:scale-105">
+                <div className="mb-4 text-4xl transition-transform duration-300 group-hover:scale-110">🌱</div>
+                <h3 className="mb-2 font-serif text-xl font-bold text-[#212121] transition-colors duration-300 group-hover:text-[#BD7263]">
                   Sustainable Practice
                 </h3>
                 <p className="text-sm text-[#212121]/70">Made to order, zero waste approach</p>
               </div>
-              <div className="rounded-2xl bg-[#EDE6DF] p-8 text-center">
-                <div className="mb-4 text-4xl">❤️</div>
-                <h3 className="mb-2 font-serif text-xl font-bold text-[#212121]">Fair Trade</h3>
+              <div className="group rounded-2xl bg-[#EDE6DF] p-8 text-center transition-all duration-300 hover:shadow-lg hover:scale-105">
+                <div className="mb-4 text-4xl transition-transform duration-300 group-hover:scale-110">❤️</div>
+                <h3 className="mb-2 font-serif text-xl font-bold text-[#212121] transition-colors duration-300 group-hover:text-[#BD7263]">Fair Trade</h3>
                 <p className="text-sm text-[#212121]/70">Direct partnerships with artisans</p>
               </div>
             </div>

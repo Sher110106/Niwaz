@@ -51,7 +51,7 @@ export default async function Footer() {
         <div className="flex flex-col gap-3">
           <h3 className="font-semibold text-[#212121]">Get in Touch</h3>
           <a
-            href="https://wa.me/91XXXXXXXXXX?text=I%20want%20a%20custom%20design"
+            href="https://wa.me/918708491362?text=I%20want%20a%20custom%20design"
             className="inline-flex items-center gap-2 text-[#212121]/70 transition-all duration-300 hover:text-[#25D366] hover:translate-x-1"
           >
             <svg className="h-4 w-4" fill="currentColor" viewBox="0 0 24 24">

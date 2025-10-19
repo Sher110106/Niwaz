@@ -22,6 +22,11 @@ export default function HomePage() {
           }}></div>
         </div>
         
+        {/* Floating decorative elements */}
+        <div className="absolute top-20 left-10 h-20 w-20 rounded-full bg-[#547B6F]/5 animate-pulse"></div>
+        <div className="absolute top-40 right-20 h-16 w-16 rounded-full bg-[#BD7263]/5 animate-pulse delay-1000"></div>
+        <div className="absolute bottom-40 left-20 h-12 w-12 rounded-full bg-[#547B6F]/5 animate-pulse delay-2000"></div>
+        
           <div className="relative mx-auto flex min-h-screen max-w-7xl items-center px-4 py-8 sm:px-6 sm:py-12 lg:px-8">
             <div className="grid w-full grid-cols-1 gap-6 sm:gap-8 lg:grid-cols-2 lg:gap-16">
             {/* Left Content */}
@@ -90,25 +95,31 @@ export default function HomePage() {
               </div>
             </div>
 
-            {/* Right Content - Image Placeholder */}
+            {/* Right Content - Hero Images */}
             <div className="relative flex items-center justify-center lg:order-first">
               <div className="relative h-[300px] w-full max-w-sm overflow-hidden rounded-2xl shadow-2xl sm:h-[400px] lg:h-[500px] lg:max-w-md">
-                {/* Placeholder for hero image */}
-                <div className="flex h-full w-full items-center justify-center bg-gradient-to-br from-[#f5e6e0] to-[#e8d5ce]">
-                  <div className="text-center">
-                    <div className="mb-3 text-4xl sm:mb-4 sm:text-6xl">👗</div>
-                    <p className="text-xs font-medium text-[#212121]/60 sm:text-sm">
-                      [HERO IMAGE PLACEHOLDER]
-                    </p>
-                    <p className="text-xs text-[#212121]/40">
-                      Beautiful hand-embroidered lehenga showcase
-                    </p>
-                  </div>
+                {/* Main Hero Image */}
+                <div className="relative h-full w-full overflow-hidden">
+                  <img
+                    src="/Gemini_Generated_Image_kyuxlwkyuxlwkyux.png"
+                    alt="Beautiful hand-embroidered coral outfit with gold and silver embellishments"
+                    className="h-full w-full object-cover transition-transform duration-700 hover:scale-105"
+                  />
+                  {/* Image overlay for better text readability */}
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/20 via-transparent to-transparent"></div>
                 </div>
                 
-                {/* Floating elements */}
+                {/* Floating decorative elements */}
                 <div className="absolute -top-2 -right-2 h-12 w-12 rounded-full bg-[#547B6F]/10 sm:-top-4 sm:-right-4 sm:h-20 sm:w-20"></div>
                 <div className="absolute -bottom-2 -left-2 h-10 w-10 rounded-full bg-[#BD7263]/10 sm:-bottom-4 sm:-left-4 sm:h-16 sm:w-16"></div>
+                
+                {/* Image gallery indicators */}
+                <div className="absolute bottom-4 left-1/2 flex -translate-x-1/2 space-x-2">
+                  <div className="h-2 w-2 rounded-full bg-white/80"></div>
+                  <div className="h-2 w-2 rounded-full bg-white/40"></div>
+                  <div className="h-2 w-2 rounded-full bg-white/40"></div>
+                  <div className="h-2 w-2 rounded-full bg-white/40"></div>
+                </div>
               </div>
             </div>
           </div>
@@ -127,50 +138,68 @@ export default function HomePage() {
             </p>
           </div>
 
-          <div className="grid gap-4 sm:gap-6 md:grid-cols-2 lg:gap-8 lg:grid-cols-3">
+          <div className="grid gap-6 sm:gap-8 md:grid-cols-2 lg:gap-8 lg:grid-cols-3">
             {/* Lehengas */}
-            <Link href="/search/lehengas" className="group relative overflow-hidden rounded-xl shadow-sm transition-all duration-300 hover:shadow-xl hover:scale-[1.02] sm:rounded-2xl">
-              <div className="aspect-[4/5] overflow-hidden bg-gradient-to-br from-[#f5e6e0] to-[#e8d5ce]">
-                <div className="flex h-full items-center justify-center text-4xl transition-transform duration-300 group-hover:scale-110 sm:text-6xl">👘</div>
+            <Link href="/search/lehengas" className="group relative overflow-hidden rounded-2xl shadow-lg transition-all duration-500 hover:shadow-2xl hover:scale-[1.03] hover:-translate-y-2">
+              <div className="aspect-[4/5] overflow-hidden">
+                <img
+                  src="/Gemini_Generated_Image_z3276gz3276gz327.png"
+                  alt="Elegant royal blue salwar kameez with intricate gold and pearl embroidery"
+                  className="h-full w-full object-cover transition-all duration-500 group-hover:scale-110"
+                />
               </div>
-              <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/20 to-transparent transition-all duration-300 group-hover:from-black/70"></div>
-              <div className="absolute bottom-0 left-0 right-0 p-3 text-white sm:p-4 lg:p-6">
-                <div className="mb-2 inline-block rounded-full bg-[#547B6F] px-2 py-1 text-xs font-medium shadow-sm">
-                  ✨ Custom Available
+              <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/30 to-transparent transition-all duration-500 group-hover:from-black/80"></div>
+              <div className="absolute bottom-0 left-0 right-0 p-4 text-white sm:p-6 lg:p-8">
+                <div className="mb-3 inline-flex items-center gap-1 rounded-full bg-[#547B6F] px-3 py-1.5 text-xs font-medium shadow-lg">
+                  <span>✨</span> Custom Available
                 </div>
-                <h3 className="font-serif text-lg font-bold sm:text-xl lg:text-2xl">Lehengas</h3>
-                <p className="text-xs text-white/90 sm:text-sm">Regal ensembles for grand occasions</p>
+                <h3 className="font-serif text-xl font-bold transition-all duration-300 group-hover:translate-y-[-2px] sm:text-2xl lg:text-3xl">Lehengas</h3>
+                <p className="text-sm text-white/90 transition-all duration-300 group-hover:translate-y-[-2px] sm:text-base">Regal ensembles for grand occasions</p>
               </div>
+              {/* Hover overlay effect */}
+              <div className="absolute inset-0 bg-gradient-to-r from-[#BD7263]/10 to-[#547B6F]/10 opacity-0 transition-opacity duration-500 group-hover:opacity-100"></div>
             </Link>
 
             {/* Suits & Kurtas */}
-            <Link href="/search/suits" className="group relative overflow-hidden rounded-xl shadow-sm transition-all duration-300 hover:shadow-xl hover:scale-[1.02] sm:rounded-2xl">
-              <div className="aspect-[4/5] overflow-hidden bg-gradient-to-br from-[#e8f0ed] to-[#d4e5df]">
-                <div className="flex h-full items-center justify-center text-4xl transition-transform duration-300 group-hover:scale-110 sm:text-6xl">🧥</div>
+            <Link href="/search/suits" className="group relative overflow-hidden rounded-2xl shadow-lg transition-all duration-500 hover:shadow-2xl hover:scale-[1.03] hover:-translate-y-2">
+              <div className="aspect-[4/5] overflow-hidden">
+                <img
+                  src="/Gemini_Generated_Image_98vxea98vxea98vx (1).png"
+                  alt="Rich maroon fabric with intricate teal and gold embroidery"
+                  className="h-full w-full object-cover transition-all duration-500 group-hover:scale-110"
+                />
               </div>
-              <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/20 to-transparent transition-all duration-300 group-hover:from-black/70"></div>
-              <div className="absolute bottom-0 left-0 right-0 p-3 text-white sm:p-4 lg:p-6">
-                <div className="mb-2 inline-block rounded-full bg-[#547B6F] px-2 py-1 text-xs font-medium shadow-sm">
-                  ✨ Custom Available
+              <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/30 to-transparent transition-all duration-500 group-hover:from-black/80"></div>
+              <div className="absolute bottom-0 left-0 right-0 p-4 text-white sm:p-6 lg:p-8">
+                <div className="mb-3 inline-flex items-center gap-1 rounded-full bg-[#547B6F] px-3 py-1.5 text-xs font-medium shadow-lg">
+                  <span>✨</span> Custom Available
                 </div>
-                <h3 className="font-serif text-lg font-bold sm:text-xl lg:text-2xl">Suits & Kurtas</h3>
-                <p className="text-xs text-white/90 sm:text-sm">Everyday elegance, masterfully crafted</p>
+                <h3 className="font-serif text-xl font-bold transition-all duration-300 group-hover:translate-y-[-2px] sm:text-2xl lg:text-3xl">Suits & Kurtas</h3>
+                <p className="text-sm text-white/90 transition-all duration-300 group-hover:translate-y-[-2px] sm:text-base">Everyday elegance, masterfully crafted</p>
               </div>
+              {/* Hover overlay effect */}
+              <div className="absolute inset-0 bg-gradient-to-r from-[#BD7263]/10 to-[#547B6F]/10 opacity-0 transition-opacity duration-500 group-hover:opacity-100"></div>
             </Link>
 
             {/* Dupattas & Stoles */}
-            <Link href="/search/dupattas" className="group relative overflow-hidden rounded-xl shadow-sm transition-all duration-300 hover:shadow-xl hover:scale-[1.02] sm:rounded-2xl md:col-span-2 lg:col-span-1">
-              <div className="aspect-[4/5] overflow-hidden bg-gradient-to-br from-[#f0e8ed] to-[#e3d5df]">
-                <div className="flex h-full items-center justify-center text-4xl transition-transform duration-300 group-hover:scale-110 sm:text-6xl">🧣</div>
+            <Link href="/search/dupattas" className="group relative overflow-hidden rounded-2xl shadow-lg transition-all duration-500 hover:shadow-2xl hover:scale-[1.03] hover:-translate-y-2 md:col-span-2 lg:col-span-1">
+              <div className="aspect-[4/5] overflow-hidden">
+                <img
+                  src="/Gemini_Generated_Image_kyuxlwkyuxlwkyux.png"
+                  alt="Beautiful coral dupatta with gold border and tassels"
+                  className="h-full w-full object-cover transition-all duration-500 group-hover:scale-110"
+                />
               </div>
-              <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/20 to-transparent transition-all duration-300 group-hover:from-black/70"></div>
-              <div className="absolute bottom-0 left-0 right-0 p-3 text-white sm:p-4 lg:p-6">
-                <div className="mb-2 inline-block rounded-full bg-[#547B6F] px-2 py-1 text-xs font-medium shadow-sm">
-                  ✨ Custom Available
+              <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/30 to-transparent transition-all duration-500 group-hover:from-black/80"></div>
+              <div className="absolute bottom-0 left-0 right-0 p-4 text-white sm:p-6 lg:p-8">
+                <div className="mb-3 inline-flex items-center gap-1 rounded-full bg-[#547B6F] px-3 py-1.5 text-xs font-medium shadow-lg">
+                  <span>✨</span> Custom Available
                 </div>
-                <h3 className="font-serif text-lg font-bold sm:text-xl lg:text-2xl">Dupattas & Stoles</h3>
-                <p className="text-xs text-white/90 sm:text-sm">The finishing touch to every outfit</p>
+                <h3 className="font-serif text-xl font-bold transition-all duration-300 group-hover:translate-y-[-2px] sm:text-2xl lg:text-3xl">Dupattas & Stoles</h3>
+                <p className="text-sm text-white/90 transition-all duration-300 group-hover:translate-y-[-2px] sm:text-base">The finishing touch to every outfit</p>
               </div>
+              {/* Hover overlay effect */}
+              <div className="absolute inset-0 bg-gradient-to-r from-[#BD7263]/10 to-[#547B6F]/10 opacity-0 transition-opacity duration-500 group-hover:opacity-100"></div>
             </Link>
           </div>
         </div>
@@ -201,8 +230,14 @@ export default function HomePage() {
                 <span className="transition-transform duration-300 hover:translate-x-1">→</span>
               </Link>
             </div>
-            <div className="order-1 relative h-[300px] overflow-hidden rounded-xl bg-gradient-to-br from-[#f5e6e0] to-[#e8d5ce] shadow-xl sm:h-[400px] lg:order-2 lg:h-[400px]">
-              <div className="flex h-full items-center justify-center text-6xl sm:text-8xl lg:text-9xl">🪡</div>
+            <div className="order-1 relative h-[300px] overflow-hidden rounded-xl shadow-xl sm:h-[400px] lg:order-2 lg:h-[400px]">
+              <img
+                src="/Gemini_Generated_Image_ukhq85ukhq85ukhq.png"
+                alt="Intricate peacock and floral embroidery on traditional Indian kurta"
+                className="h-full w-full object-cover transition-transform duration-700 hover:scale-105"
+              />
+              {/* Subtle overlay for better text readability */}
+              <div className="absolute inset-0 bg-gradient-to-br from-[#f5e6e0]/20 to-[#e8d5ce]/20"></div>
             </div>
           </div>
         </div>
@@ -219,7 +254,7 @@ export default function HomePage() {
             embroidery, personalized designs, and bespoke creations.
           </p>
           <a
-            href="https://wa.me/91XXXXXXXXXX?text=I%20want%20a%20custom%20design"
+            href="https://wa.me/918708491362?text=I%20want%20a%20custom%20design"
             className="inline-flex items-center gap-2 rounded-full bg-[#25D366] px-6 py-3 text-base font-semibold text-white shadow-lg transition-all hover:scale-105 hover:shadow-xl sm:gap-3 sm:px-8 sm:py-4 sm:text-lg"
           >
             <svg className="h-5 w-5 sm:h-6 sm:w-6" fill="currentColor" viewBox="0 0 24 24">
@@ -258,22 +293,31 @@ export default function HomePage() {
             ].map((testimonial, idx) => (
               <div
                 key={idx}
-                className="group rounded-xl border border-[#ECECEC] bg-white p-6 shadow-sm transition-all duration-300 hover:shadow-lg hover:scale-[1.02] sm:rounded-2xl sm:p-8"
+                className="group relative rounded-2xl border border-[#ECECEC] bg-white p-6 shadow-lg transition-all duration-500 hover:shadow-2xl hover:scale-[1.03] hover:-translate-y-2 sm:p-8"
               >
+                {/* Decorative quote mark */}
+                <div className="absolute -top-2 -left-2 text-4xl text-[#BD7263]/20 font-serif">"</div>
+                
                 <div className="mb-4 flex gap-1 text-[#BD7263]">
                   {[...Array(5)].map((_, i) => (
-                    <svg key={i} className="h-5 w-5" fill="currentColor" viewBox="0 0 20 20">
+                    <svg key={i} className="h-5 w-5 transition-all duration-300 group-hover:scale-110" fill="currentColor" viewBox="0 0 20 20">
                       <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
                     </svg>
                   ))}
                 </div>
-                <p className="mb-4 text-[#212121]/80">{testimonial.text}</p>
+                <p className="mb-6 text-[#212121]/80 leading-relaxed transition-all duration-300 group-hover:text-[#212121]">{testimonial.text}</p>
                 <div className="flex items-center justify-between">
-                  <p className="font-semibold text-[#212121]">{testimonial.name}</p>
-                  <span className="rounded-full bg-[#EDE6DF] px-3 py-1 text-xs font-medium text-[#212121]">
+                  <div>
+                    <p className="font-semibold text-[#212121] transition-all duration-300 group-hover:text-[#BD7263]">{testimonial.name}</p>
+                    <p className="text-xs text-[#212121]/60">Verified Customer</p>
+                  </div>
+                  <span className="rounded-full bg-gradient-to-r from-[#EDE6DF] to-[#f0e8e8] px-4 py-2 text-xs font-medium text-[#212121] shadow-sm transition-all duration-300 group-hover:shadow-md">
                     {testimonial.occasion}
                   </span>
                 </div>
+                
+                {/* Hover gradient overlay */}
+                <div className="absolute inset-0 rounded-2xl bg-gradient-to-br from-[#BD7263]/5 to-[#547B6F]/5 opacity-0 transition-opacity duration-500 group-hover:opacity-100"></div>
               </div>
             ))}
           </div>

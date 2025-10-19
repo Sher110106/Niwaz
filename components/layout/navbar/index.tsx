@@ -71,7 +71,7 @@ export async function Navbar() {
           </div>
           <div className="flex items-center gap-3">
             <a
-              href="https://wa.me/91XXXXXXXXXX?text=I%20want%20a%20custom%20design"
+              href="https://wa.me/918708491362?text=I%20want%20a%20custom%20design"
               className="flex items-center gap-2 rounded-full bg-[#25D366] px-4 py-2 text-xs font-medium text-white transition-all duration-300 hover:bg-[#20bd5a] hover:scale-105 hover:shadow-lg"
             >
               <svg className="h-4 w-4" fill="currentColor" viewBox="0 0 24 24">

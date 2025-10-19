@@ -171,49 +171,55 @@ export default function OurCraftPage() {
             </div>
 
             <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
-              <div className="rounded-2xl bg-white p-8 shadow-sm transition-shadow hover:shadow-md">
-                <h3 className="mb-3 font-serif text-xl font-bold text-[#212121]">Zardozi</h3>
-                <p className="text-sm text-[#212121]/70">
+              <div className="group rounded-2xl bg-white p-8 shadow-lg transition-all duration-300 hover:shadow-xl hover:scale-105 hover:-translate-y-1">
+                <div className="mb-4 text-3xl">👑</div>
+                <h3 className="mb-3 font-serif text-xl font-bold text-[#212121] transition-colors duration-300 group-hover:text-[#BD7263]">Zardozi</h3>
+                <p className="text-sm text-[#212121]/70 leading-relaxed">
                   Metallic embroidery using gold and silver threads, often embellished with pearls
                   and precious stones. A regal technique favored by royalty for centuries.
                 </p>
               </div>
 
-              <div className="rounded-2xl bg-white p-8 shadow-sm transition-shadow hover:shadow-md">
-                <h3 className="mb-3 font-serif text-xl font-bold text-[#212121]">Resham</h3>
-                <p className="text-sm text-[#212121]/70">
+              <div className="group rounded-2xl bg-white p-8 shadow-lg transition-all duration-300 hover:shadow-xl hover:scale-105 hover:-translate-y-1">
+                <div className="mb-4 text-3xl">🧵</div>
+                <h3 className="mb-3 font-serif text-xl font-bold text-[#212121] transition-colors duration-300 group-hover:text-[#BD7263]">Resham</h3>
+                <p className="text-sm text-[#212121]/70 leading-relaxed">
                   Silk thread embroidery creating colorful, flowing designs. The soft luster of
                   resham creates depth and dimension in floral and nature-inspired motifs.
                 </p>
               </div>
 
-              <div className="rounded-2xl bg-white p-8 shadow-sm transition-shadow hover:shadow-md">
-                <h3 className="mb-3 font-serif text-xl font-bold text-[#212121]">Aari Work</h3>
-                <p className="text-sm text-[#212121]/70">
+              <div className="group rounded-2xl bg-white p-8 shadow-lg transition-all duration-300 hover:shadow-xl hover:scale-105 hover:-translate-y-1">
+                <div className="mb-4 text-3xl">🪡</div>
+                <h3 className="mb-3 font-serif text-xl font-bold text-[#212121] transition-colors duration-300 group-hover:text-[#BD7263]">Aari Work</h3>
+                <p className="text-sm text-[#212121]/70 leading-relaxed">
                   Using a specialized hooked needle (aari), artisans create intricate chain stitch
                   patterns with incredible speed and precision.
                 </p>
               </div>
 
-              <div className="rounded-2xl bg-white p-8 shadow-sm transition-shadow hover:shadow-md">
-                <h3 className="mb-3 font-serif text-xl font-bold text-[#212121]">Chikankari</h3>
-                <p className="text-sm text-[#212121]/70">
+              <div className="group rounded-2xl bg-white p-8 shadow-lg transition-all duration-300 hover:shadow-xl hover:scale-105 hover:-translate-y-1">
+                <div className="mb-4 text-3xl">❄️</div>
+                <h3 className="mb-3 font-serif text-xl font-bold text-[#212121] transition-colors duration-300 group-hover:text-[#BD7263]">Chikankari</h3>
+                <p className="text-sm text-[#212121]/70 leading-relaxed">
                   Delicate white-on-white embroidery from Lucknow, featuring elegant shadow work and
                   ethereal patterns perfect for summer wear.
                 </p>
               </div>
 
-              <div className="rounded-2xl bg-white p-8 shadow-sm transition-shadow hover:shadow-md">
-                <h3 className="mb-3 font-serif text-xl font-bold text-[#212121]">Mirror Work</h3>
-                <p className="text-sm text-[#212121]/70">
+              <div className="group rounded-2xl bg-white p-8 shadow-lg transition-all duration-300 hover:shadow-xl hover:scale-105 hover:-translate-y-1">
+                <div className="mb-4 text-3xl">✨</div>
+                <h3 className="mb-3 font-serif text-xl font-bold text-[#212121] transition-colors duration-300 group-hover:text-[#BD7263]">Mirror Work</h3>
+                <p className="text-sm text-[#212121]/70 leading-relaxed">
                   Small mirrors (shisha) are intricately stitched into fabric, catching light and
                   creating dazzling effects inspired by traditional Gujarati and Rajasthani crafts.
                 </p>
               </div>
 
-              <div className="rounded-2xl bg-white p-8 shadow-sm transition-shadow hover:shadow-md">
-                <h3 className="mb-3 font-serif text-xl font-bold text-[#212121]">Gota Patti</h3>
-                <p className="text-sm text-[#212121]/70">
+              <div className="group rounded-2xl bg-white p-8 shadow-lg transition-all duration-300 hover:shadow-xl hover:scale-105 hover:-translate-y-1">
+                <div className="mb-4 text-3xl">💎</div>
+                <h3 className="mb-3 font-serif text-xl font-bold text-[#212121] transition-colors duration-300 group-hover:text-[#BD7263]">Gota Patti</h3>
+                <p className="text-sm text-[#212121]/70 leading-relaxed">
                   Appliqué work using ribbons of gold and silver, creating geometric patterns and
                   borders that add sparkle and structure.
                 </p>
