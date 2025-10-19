@@ -1,10 +1,16 @@
+'use client';
+
 import { AddToCart } from 'components/cart/add-to-cart';
+import { useCart } from 'components/cart/cart-context';
 import Price from 'components/price';
 import Prose from 'components/prose';
 import { Product } from 'lib/shopify/types';
+import { generateWhatsAppUrl } from 'lib/whatsapp-utils';
 import { VariantSelector } from './variant-selector';
 
 export function ProductDescription({ product }: { product: Product }) {
+  const { cart } = useCart();
+  
   return (
     <div className="space-y-8">
       {/* Product Header */}
@@ -63,7 +69,7 @@ export function ProductDescription({ product }: { product: Product }) {
               We're currently taking orders exclusively through WhatsApp for a personalized shopping experience.
             </p>
             <a
-              href={`https://wa.me/918708491362?text=Hi! I'm interested in this product: ${product.title}. Can you help me place an order?`}
+              href={generateWhatsAppUrl(cart, product.title)}
               className="inline-flex items-center rounded-full bg-[#25D366] px-4 py-2 text-xs font-medium text-white transition-all duration-200 hover:bg-[#20C55A] hover:scale-105"
             >
               <span className="mr-1">📱</span>

@@ -6,6 +6,7 @@ import clsx from 'clsx';
 import Price from 'components/price';
 import { DEFAULT_OPTION } from 'lib/constants';
 import { createUrl } from 'lib/utils';
+import { generateWhatsAppUrl } from 'lib/whatsapp-utils';
 import Image from 'next/image';
 import Link from 'next/link';
 import { Fragment, useEffect, useRef, useState } from 'react';
@@ -226,7 +227,7 @@ export default function CartModal() {
                           We're currently taking orders exclusively through WhatsApp for a personalized experience.
                         </p>
                         <a
-                          href="https://wa.me/918708491362?text=Hi! I'd like to place an order for the items in my cart."
+                          href={generateWhatsAppUrl(cart)}
                           className="inline-flex items-center rounded-full bg-[#25D366] px-4 py-2 text-xs font-medium text-white transition-all duration-200 hover:bg-[#20C55A] hover:scale-105"
                         >
                           <span className="mr-1">📱</span>

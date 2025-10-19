@@ -19,46 +19,62 @@ export default async function SearchPage(props: {
   const resultsText = products.length > 1 ? 'results' : 'result';
 
   return (
-    <div className="space-y-6">
+    <div className="min-h-screen bg-[#EDE6DF]">
       {/* Search Results Header */}
-      {searchValue ? (
-        <div className="rounded-lg bg-white p-4 shadow-sm">
-          <p className="text-sm text-[#212121]/80">
-            {products.length === 0
-              ? 'No products found for '
-              : `Found ${products.length} ${resultsText} for `}
-            <span className="font-semibold text-[#BD7263]">&quot;{searchValue}&quot;</span>
-          </p>
+      <div className="bg-white border-b border-[#ECECEC]">
+        <div className="mx-auto max-w-7xl px-4 py-8 sm:px-6 lg:px-8">
+          {searchValue ? (
+            <div className="text-center">
+              <h1 className="text-2xl font-serif font-medium text-[#212121] sm:text-3xl lg:text-4xl">
+                Search Results
+              </h1>
+              <p className="mt-2 text-sm text-[#212121]/70">
+                {products.length === 0
+                  ? 'No products found for '
+                  : `Found ${products.length} ${resultsText} for `}
+                <span className="font-semibold text-[#BD7263]">&quot;{searchValue}&quot;</span>
+              </p>
+            </div>
+          ) : (
+            <div className="text-center">
+              <h1 className="text-2xl font-serif font-medium text-[#212121] sm:text-3xl lg:text-4xl">
+                All Products
+              </h1>
+              <p className="mt-2 text-sm text-[#212121]/70">
+                Browse our complete collection of hand-embroidered pieces
+              </p>
+            </div>
+          )}
         </div>
-      ) : (
-        <div className="hidden md:block">
-          <h2 className="font-serif text-2xl font-bold text-[#212121] lg:text-3xl">
-            All Products
-          </h2>
-          <p className="mt-1 text-sm text-[#212121]/70">
-            Browse our complete collection of hand-embroidered pieces
-          </p>
-        </div>
-      )}
+      </div>
 
-      {/* Products Grid */}
-      {products.length > 0 ? (
-        <div className="space-y-6">
-          <Grid className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
-            <ProductGridItems products={products} />
-          </Grid>
-        </div>
-      ) : (
-        <div className="flex flex-col items-center justify-center py-12 text-center">
-          <div className="mb-4 text-6xl">🔍</div>
-          <h3 className="mb-2 font-serif text-xl font-bold text-[#212121]">
-            No Products Found
-          </h3>
-          <p className="text-sm text-[#212121]/70">
-            Try adjusting your search or browse our collections
-          </p>
-        </div>
-      )}
+      {/* Products Section */}
+      <div className="mx-auto max-w-7xl px-4 py-8 sm:px-6 lg:px-8">
+        {products.length > 0 ? (
+          <>
+            <div className="mb-6 flex items-center justify-between">
+              <p className="text-sm text-[#212121]/60">
+                Showing {products.length} {products.length === 1 ? 'product' : 'products'}
+              </p>
+            </div>
+            <Grid className="grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3 2xl:grid-cols-4">
+              <ProductGridItems products={products} />
+            </Grid>
+          </>
+        ) : (
+          <div className="flex flex-col items-center justify-center py-16 text-center">
+            <div className="mb-6 h-24 w-24 rounded-full bg-[#ECECEC] flex items-center justify-center">
+              <span className="text-4xl">🔍</span>
+            </div>
+            <h3 className="mb-2 font-serif text-xl font-bold text-[#212121]">
+              No Products Found
+            </h3>
+            <p className="text-sm text-[#212121]/70">
+              Try adjusting your search or browse our collections
+            </p>
+          </div>
+        )}
+      </div>
     </div>
   );
 }

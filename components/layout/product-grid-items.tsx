@@ -22,12 +22,12 @@ export default function ProductGridItems({ products }: { products: Product[] }) 
               }}
               src={product.featuredImage?.url}
               fill
-              sizes="(min-width: 1280px) 25vw, (min-width: 1024px) 33vw, (min-width: 640px) 50vw, 100vw"
+              sizes="(min-width: 1536px) 25vw, (min-width: 1280px) 33vw, (min-width: 1024px) 33vw, (min-width: 640px) 50vw, 100vw"
             />
             {/* Custom Available Badge - Only on hover */}
             <div className="absolute top-3 right-3 opacity-0 transition-all duration-300 group-hover:opacity-100 group-hover:scale-105">
-              <span className="rounded-full bg-[#547B6F] px-3 py-1.5 text-xs font-medium text-white shadow-lg">
-                ✨ Custom Available
+              <span className="rounded-full bg-[#547B6F] px-2.5 py-1 text-xs font-medium text-white shadow-lg">
+                ✨ Custom
               </span>
             </div>
           </Link>
